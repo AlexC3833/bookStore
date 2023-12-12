@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
 
 <head>
 
@@ -7,14 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<title>Book Store</title>
+	<title>BookVoyage</title>
 </head>
 
 <body>
 
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand text-white" href="#">Book Store</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -23,29 +23,41 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+						<a class="nav-link active text-white" aria-current="page" href="/">BookVoyage</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#">Available Books</a>
+						<a class="nav-link text-white" href="available_books">Carti Disponibile</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#">My Books</a>
+						<a class="nav-link text-white" href="my_books">Cartile Mele</a>
 					</li>
 				</ul>
+				<div>
+					<a class="nav-link text-white" href="book_register">Adaugare Carte</a>
+				</div>
 			</div>
-			<a class="nav-link text-white" href="#">New Book Register</a>
-		</div>
-		</div>
 		</div>
 	</nav>
+
 	<div class="container text-center my-5">
-		<h1>WELCOME TO NEW BOOK STORE</h1>
-		<h6> "Our greatest wekness lies in giving up. The most certain way to succeed is always to try just one more
-			time."
-			Thomas Edison
-		</h6>
-		<img src="/images/bs.png" width="720px" />
+		<h1>BookVoyage: Explorează Lumea Cărților cu O Aplicație Simplă și Atractivă</h1>
+		<h6>""Slăbiciunea noastră cea mai mare constă în a renunța. Cea mai sigură modalitate de a reuși este
+			întotdeauna să încerci doar încă o dată." Thomas Edison</h6>
+		<img src="/images/img.png" width="720px" />
 	</div>
+
+	<div class="container text-center mt-5">
+		<p class="mb-5">Cu bucurie vă prezentăm "BookVoyage", prima noastră aplicație web, creată cu pasiune și
+			dedicație folosind limbajul de programare Java, alături de sprijinul prețios oferit de Digital Nation și
+			Generația Tech. Descoperiți universul captivant al tehnologiei într-o experiență online inovatoare,
+			construită
+			cu abilități dobândite în cadrul acestor programe educaționale de excepție. "BookVoyage" este o călătorie
+			digitală, modelată cu mândrie prin eforturile noastre de învățare și creare tehnologică. Alăturați-vă și
+			fiți parte din această aventură cu o notă specială de
+			programare Java!</p>
+	</div>
+
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
@@ -55,6 +67,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
 		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 		crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -7,7 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<title>BookVoyage</title>
+	<title>Book Store</title>
+	<script src="https://kit.fontawesome.com/0faddc1af8.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -39,22 +41,28 @@
 		</div>
 	</nav>
 
-	<div class="container text-center my-5">
-		<h1>BookVoyage: Explorează Lumea Cărților cu O Aplicație Simplă și Atractivă</h1>
-		<h6>""Slăbiciunea noastră cea mai mare constă în a renunța. Cea mai sigură modalitate de a reuși este
-			întotdeauna să încerci doar încă o dată." Thomas Edison</h6>
-		<img src="/images/img.png" width="720px" />
-	</div>
-
-	<div class="container text-center mt-5">
-		<p class="mb-5">Cu bucurie vă prezentăm "BookVoyage", prima noastră aplicație web, creată cu pasiune și
-			dedicație folosind limbajul de programare Java, alături de sprijinul prețios oferit de Digital Nation și
-			Generația Tech. Descoperiți universul captivant al tehnologiei într-o experiență online inovatoare,
-			construită
-			cu abilități dobândite în cadrul acestor programe educaționale de excepție. "BookVoyage" este o călătorie
-			digitală, modelată cu mândrie prin eforturile noastre de învățare și creare tehnologică. Alăturați-vă și
-			fiți parte din această aventură cu o notă specială de
-			programare Java!</p>
+	<div class="container my-5 col-md-6">
+		<table class="table  table-striped table-hover">
+			<thead>
+				<tr>
+					<th scope="col">Nr.</th>
+					<th scope="col">Nume</th>
+					<th scope="col">Autor</th>
+					<th scope="col">Pret</th>
+					<th scope="col">Stergere</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="b :${book}">
+					<td th:text="${b.id}"></td>
+					<td th:text="${b.name}"></td>
+					<td th:text="${b.author}"></td>
+					<td th:text="${b.price}"></td>
+					<td><a style="color:saddlebrown" th:href="@{/deleteMyList/{id}(id=${b.id})}"><i
+								class="fa-solid fa-trash"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 
 
