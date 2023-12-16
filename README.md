@@ -1,1 +1,2 @@
+Prezentare Video: https://uploadnow.io/f/rZvGtNJ
 Proiectul este o aplicație web dezvoltată în Java, folosind framework-ul Spring și Thymeleaf pentru interfața cu utilizatorul. Permite utilizatorilor să vizualizeze și să înregistreze cărți, să creeze liste personale și să șteargă cărți din aceste liste. Datele sunt stocate într-o bază de date. Scopul proiectului este să ofere o platformă simplă pentru gestionarea cărților.
